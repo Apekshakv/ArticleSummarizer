@@ -1,0 +1,66 @@
+/* demo.css */
+
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+input[type="url"] {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="url"]:focus {
+  border-color: #2563eb; /* blue-600 */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); /* soft blue glow */
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+button:disabled {
+  background-color: #9ca3af; /* gray-400 */
+  cursor: not-allowed;
+}
+/* demo.css */
+
+.summary {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  background-color: #f9fafb; /* light gray */
+  border: 1px solid #e5e7eb; /* subtle border */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151; /* gray-700 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  white-space: pre-line; /* keeps line breaks */
+}
